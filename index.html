@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+</head>
+<body>
+    <nav>
+        <!--close-->
+        <div class="navclose">
+            <div class="navclose__img"></div>
+        </div>
+        <!--titulo-->
+        <div class="navtitulos">
+            <div class="navtitulos__content navtitulos--fondo">
+                <img class="navtitulos__content__img" src="./sources/imgs/H.svg" alt="Logo Hotel Miranda">
+            </div>
+            <div class="navtitulos__content">
+                <img class="navtitulos__content__tit" src="./sources/imgs/HotelMiranda.svg" alt=""></div>
+            </div>
+        </div>
+        <!--iconos-->
+        <div class="naviconos">
+            <div class="naviconos__perfil"></div>
+            <div class="naviconos__search"></div>
+        </div>
+    </nav>
+    <!--Nav JS-->
+    <div class="nav">
+        <ul class="nav__list">
+            <li>About Us</li>
+            <li>Rooms</li>
+            <li>Offers</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <header>
+        <h3 class="subtitulo">THE ULTIMATE LUXURY<br>EXPERIENCE</h3>
+        <h1 class="titulo">The Perfect<br>Base For You</h1>
+        <div class="btns">
+            <div class="btns__taketour">TAKE A TOUR</div>
+            <div class="btns__learnmore">LEARN MORE</div>
+        </div>
+    </header>
+    <!--Form disponibilidad-->
+    <section>
+        <form class="formavailability">
+            <div class='formavailability__content'>
+                <label class="formavailability__content__tag">Arrival Date</label>
+                <input class="formavailability__content__start" type="date">
+            </div>
+            <div class='formavailability__content formavailability--margin'>
+                <label class="formavailability__content__tag">LeDeparture Date</label>
+                <input class="formavailability__content__end" type="date">
+            </div>
+            <button class="formavailability__send" type="submit">CHECK AVAILABILITY</button>
+        </form>
+    </section>
+
+    <!--About Us-->
+    <section>
+        <div class="aboutus">
+            <div class="aboutus__info">
+                <h3 class="aboutus__info__sub">About Us</h3>
+                <h1 class="aboutus__info__tit">Discover Our<br>Underground.</h1>
+                <p class="aboutus__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="aboutus__btn">
+                <div>BOOK NOW</div>
+            </div>
+        </div>
+    
+        <!--imgsAboutUs-->
+        <div class="aboutImgs">
+            <div class="aboutImgs__content">
+                <img class="aboutImgs__content__img" src="./sources/imgs/img1.jpg" alt="">
+            </div>
+            <div class="aboutImgs__contenttxt">
+                <div class="aboutImgs__contenttxt__img"></div>
+                <div class="aboutImgs__contenttxt__tit">Strong Team</div>
+                <div class="aboutImgs__contenttxt__sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            </div>
+        </div>
+    
+        <div class="aboutImgs">
+            <div class="aboutImgs__content">
+                <img class="aboutImgs__content__img" src="./sources/imgs/img2.jpg" alt="">
+            </div>
+            <div class="aboutImgs__contenttxt aboutImgs__contenttxt--color">
+                <div class="aboutImgs__contenttxt__img2"></div>
+                <div class="aboutImgs__contenttxt__tit aboutImgs__contenttxt__tit--color">Luxury Room</div>
+                <div class="aboutImgs__contenttxt__sub aboutImgs__contenttxt__sub--color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!--Slider Rooms-->
+    <section class="slider">
+        <h3 class="slider__sub">Rooms</h3>
+        <h2 class="slider__tit">Hand Picked Rooms</h2>
+
+        <div class="slider__content">
+            <div class="slider__content__topbar">
+                <div class="slider__content__topbar__img"></div>
+                <div class="slider__content__topbar__img2"></div>
+                <div class="slider__content__topbar__img3"></div>
+                <div class="slider__content__topbar__img4"></div>
+                <div class="slider__content__topbar__img5"></div>
+                <div class="slider__content__topbar__img6"></div>
+                <div class="slider__content__topbar__img7"></div>
+            </div>
+
+            <div class="slider__content__swip">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="swiperImage" src="./sources/imgs/room1.jpg" alt="Room 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiperImage" src="./sources/imgs/room2.jpg" alt="Room 2">
+                    </div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+            <div class="slider__content__info">
+                <h2 class="slider__content__info__tit">Minimal Duplex Room</h2>
+                <p class="slider__content__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <span class="slider__content__info__precio">$345<span  class="slider__content__info__precio__night">/Night</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!--Intro video-->
+    <section class="video">
+        <h3 class="video__sub">Intro video</h3>
+        <h2 class="video__tit">Meet With Our Luxury Place.</h2>
+        <p class="video__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+        <video class="video__play" width="100%" height="270" controls>
+            <source src="./sources/videos/presentacion.mp4" type="video/mp4">
+            <p>Video not suported</p>
+        </video> 
+        <div class="video__btn">BOOK NOW</div>
+    </section>
+
+    <!--Facilities-->
+    <section class="facilities">
+        <h3 class="facilities__sub">Facilities</h3>
+        <h2 class="facilities__tit">Core Features</h2>
+        <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+                <div class="facilities__card">
+                    <div class="facilities__card__img"></div>
+                    <h2 class="facilities__card__tit">Have High Rating</h2>
+                    <p class="facilities__card__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+        </swiper-container>
+    </section>
+
+    <!--Menu-->
+    <section class="menu">
+        <div class="menu__content">
+            <div class="menu__content__img"></div>
+        </div>
+        <div class="menu__contenttit">
+            <h3 class="menu__contenttit__sub">MENU</h3>
+            <h2 class="menu__contenttit__tit">Our Foods Menu</h2>
+        </div>
+        <div class="menu__slider">
+            <div class="slider__content__swip">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="menuinfo">
+                            <div class="menuinfo__content">
+                                <img class="menuinfo__content__img" src="./sources/imgs/room1.jpg" alt="Menu 1">
+                            </div>
+                            <div class="menuinfo__content">
+                                <h2 class="menuinfo__content__tit">Eggs & Bacon</h2>
+                                <p class="menuinfo__content__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    ...
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

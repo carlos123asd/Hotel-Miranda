@@ -1,0 +1,50 @@
+.video {
+  background-color: #222222;
+  padding: 4em 1.509em;
+  margin-top: 50%;
+}
+.video__sub {
+  font-family: "Archivo-Regular";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #BDAC8D;
+  text-transform: uppercase;
+  margin-bottom: 2.5em;
+}
+.video__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+.video__p {
+  font-family: "Archivo-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #C2C2C2;
+}
+.video__play {
+  margin-bottom: 1.5em;
+}
+.video__btn {
+  width: 16.563em;
+  height: 4.5em;
+  background-color: #BEAD8E;
+  text-align: center;
+  align-content: center;
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: #fff;
+}/*# sourceMappingURL=video.css.map */

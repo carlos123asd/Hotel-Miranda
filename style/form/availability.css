@@ -1,0 +1,38 @@
+.formavailability {
+  background-color: #222222;
+  height: 21.125em;
+  padding: 2.25em 1.25em;
+  padding-bottom: 0;
+}
+.formavailability--margin {
+  margin-top: 1.875em;
+}
+.formavailability__content__tag, .formavailability__content__start, .formavailability__content__end {
+  display: block;
+}
+.formavailability__content__tag {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 1.438em;
+}
+.formavailability__content__start, .formavailability__content__end {
+  width: 100%;
+}
+.formavailability__send {
+  width: 19.563em;
+  height: 4.5em;
+  background-color: #BEAD8E;
+  color: #fff;
+  font-family: "Archivo-Regular";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  border: 0px;
+  margin-top: 2.5em;
+}/*# sourceMappingURL=availability.css.map */

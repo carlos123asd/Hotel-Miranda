@@ -1,0 +1,23 @@
+@use '../mixin/buildHeaderMixin.scss';
+
+header{
+    padding: 5.313em 1.25em;
+    background-color: #333333;
+    color: #fff;
+    .subtitulo{
+        @include buildHeaderMixin.subtitulo();
+    }
+    .titulo{
+        @include buildHeaderMixin.titulo();
+        margin: 1em 0;
+    }
+    .btns{
+        &__taketour{
+            @include buildHeaderMixin.btnsFirst();
+        }
+        &__learnmore{
+            @include buildHeaderMixin.btnsSecond();
+            margin-top: 1.5em;
+        }
+    }
+}

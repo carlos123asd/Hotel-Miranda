@@ -1,0 +1,140 @@
+@use '../mixin/configImgMixer.scss';
+.slider{
+    margin-top: 3em;
+    &__tit{
+        font-family: 'OldStandardTT-Regular';
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2000000476837158px;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    &__sub{
+        font-family: 'Archivo-Regular';
+        font-size: 0.875em;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    &__content{
+        width: 100%;
+        height: 15.25em;
+        position: relative;
+        &__topbar{
+            width: 17em;
+            height: 2.5em;
+            position: absolute;
+            top: -1.25em;
+            right: 18%;
+            z-index: 1000;
+            align-content: center;
+            background-color: #fff;
+            &__img{
+                margin-right: 1em;
+                margin-left: .35em;
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/bed.svg',20px,16px);           }
+            &__img2{
+                margin-right: 1em;
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/wifi.svg',16px,16px);           }
+            &__img3{
+                margin-right: 1em;
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/car.svg',16px,16px);           }
+            &__img4{
+                margin-right: 1em;
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/acondicionado.svg',30px,16px);           }
+            &__img5{
+                margin-right: 1em;
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/gym.svg',20px,16px);           }
+            &__img6{
+                margin-right: 1em;
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/tabaco.svg',20px,16px);           }
+            &__img7{
+                display: inline-block;
+                 @include configImgMixer.imgconfig('../../sources/imgs/topbar/alcohol.svg',20px,16px);           }
+        }
+    
+        &__info{
+            width: 20.938em;
+            height: 13.438em;
+            background-color: #fff;
+            position: absolute;
+            left: 10%;
+            top: 90%;
+            z-index: 1000;
+            text-align: center;
+            align-content: space-evenly;
+            padding: 1.188em 1.5em;
+            &__tit{
+                font-family: 'OldStandardTT-Regular';
+                font-size: 1.75rem;
+                font-weight: 400;
+                line-height: 36px;
+                letter-spacing: -1.2000000476837158px;             
+            }
+            &__p{
+                font-family: 'Roboto';
+                font-size: 0.88rem;
+                font-weight: 400;
+                line-height: 24px;         
+                margin: 1em 0;      
+            }
+            &__precio{
+                font-family: 'Archivo-Regular';
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 43px;  
+                color: #BEAD8E;
+                &__night{
+                    font-family: 'Archivo-Regular';
+                    font-size: 0.81rem;
+                    font-weight: 700;
+                    line-height: 43px;
+                }
+            }
+        }
+    }
+}
+.swiper {
+    width: 100%;
+    height: 15.25em;
+}
+.swiperImage{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.swiper-button-prev{
+    width: 2em !important;
+    height: 2em !important;
+    background-color: #fff;
+    &::after{
+        font-size: .5em !important;
+        color: #111111;
+    }
+    &:hover{
+        background-color: #BDAC8D;
+    }
+}
+.swiper-button-next{
+    width: 2em !important;
+    height: 2em !important;
+    background-color: #fff;
+    &::after{
+        font-size: .5em !important;
+        color: #111111;
+    }
+    &:hover{
+        background-color: #BDAC8D;
+    }
+}
