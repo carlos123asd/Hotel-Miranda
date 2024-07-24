@@ -125,14 +125,14 @@
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img class="swiperImage" src="./sources/imgs/room1.jpg" alt="Room 1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="swiperImage" src="./sources/imgs/room2.jpg" alt="Room 2">
-                    </div>
-                    ...
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="swiperImage" src="./sources/imgs/room1.jpg" alt="Room 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiperImage" src="./sources/imgs/room2.jpg" alt="Room 2">
+                        </div>
+                        ...
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -191,32 +191,94 @@
             <h3 class="menu__contenttit__sub">MENU</h3>
             <h2 class="menu__contenttit__tit">Our Foods Menu</h2>
         </div>
-        <div class="menu__slider">
-            <div class="slider__content__swip">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="menuinfo">
-                            <div class="menuinfo__content">
-                                <img class="menuinfo__content__img" src="./sources/imgs/room1.jpg" alt="Menu 1">
-                            </div>
-                            <div class="menuinfo__content">
-                                <h2 class="menuinfo__content__tit">Eggs & Bacon</h2>
-                                <p class="menuinfo__content__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
+        <swiper-container class="swiperMenu" slides-per-view="1" grid-rows="3">
+            <swiper-slide>
+                <div class="menuinfo">
+                    <div class="menuinfo__contentimg">
+                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu1.jpg" alt="Menu 1">
                     </div>
-                    ...
+                    <div class="menuinfo__contenttxt">
+                        <h2 class="menuinfo__contenttxt__tit">Eggs & Bacon</h2>
+                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                     </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="menuinfo">
+                    <div class="menuinfo__contentimg">
+                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu2.jpg" alt="Menu 1">
+                    </div>
+                    <div class="menuinfo__contenttxt">
+                        <h2 class="menuinfo__contenttxt__tit">Tea or Coffee</h2>
+                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="menuinfo">
+                    <div class="menuinfo__contentimg">
+                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu3.jpg" alt="Menu 1">
+                    </div>
+                    <div class="menuinfo__contenttxt">
+                        <h2 class="menuinfo__contenttxt__tit">Chia Oatmeal</h2>
+                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                ...otros
+            </swiper-slide>
+          </swiper-container>
+          <div class="swiper-button-prev posback"></div>
+          <div class="swiper-button-next posnext"></div>
+    </section>
+
+    <!--Slider standar-->
+    <section class="swiperNormal">
+        <swiper-container class="swiperStandar" pagination="true">
+            <swiper-slide>
+                <img src="./sources/imgs/room1.jpg" alt="img prueba1">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./sources/imgs/room2.jpg" alt="img prueba2">
+            </swiper-slide>
+        </swiper-container>
+    </section>
+
+    <!--Estadisticas-->
+    <section class="estadisticas">
+        <div class="estadisticasbloq">
+            <div class="estadisticas__img">
+                <img src="./sources/imgs/estadisticas/est1.svg" alt="Proyectos Completados">
             </div>
+            <span class="estadisticas__tit">84k<span>+</span></span>
+            <span class="estadisticas__sub">Projects are Completed</span>
+        </div>
+        <div class="estadisticasbloq">
+            <div class="estadisticas__img">
+                <img src="./sources/imgs/estadisticas/est2.svg" alt="Active Backers">
+            </div>
+            <span class="estadisticas__tit">10M<span>+</span></span>
+            <span class="estadisticas__sub">Active Backers Around World</span>
+        </div>
+        <div class="estadisticasbloq">
+            <div class="estadisticas__img">
+                <img src="./sources/imgs/estadisticas/est3.svg" alt="Categories Served">
+            </div>
+            <span class="estadisticas__tit">02K<span>+</span></span>
+            <span class="estadisticas__sub">Categories Served</span>
+        </div>
+        <div class="estadisticasbloq">
+            <div class="estadisticas__img">
+                <img src="./sources/imgs/estadisticas/est4.svg" alt="Idea Raised Funds">
+            </div>
+            <span class="estadisticas__tit">100M<span>+</span></span>
+            <span class="estadisticas__sub">Idea Raised Funds</span>
         </div>
     </section>
+
+    <header>
+        
+    </header>
 </body>
 </html>

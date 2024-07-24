@@ -31,6 +31,7 @@ header .btns__taketour {
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
+  color: #fff;
 }
 header .btns__learnmore {
   width: 16.563em;
@@ -43,5 +44,6 @@ header .btns__learnmore {
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
+  color: #fff;
   margin-top: 1.5em;
 }/*# sourceMappingURL=headerHome.css.map */

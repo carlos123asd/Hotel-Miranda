@@ -160,7 +160,7 @@
 .swiper-button-prev {
   width: 2em !important;
   height: 2em !important;
-  background-color: #fff;
+  background-color: #F8F8F8;
 }
 .swiper-button-prev::after {
   font-size: 0.5em !important;
@@ -173,7 +173,7 @@
 .swiper-button-next {
   width: 2em !important;
   height: 2em !important;
-  background-color: #fff;
+  background-color: #F8F8F8;
 }
 .swiper-button-next::after {
   font-size: 0.5em !important;
