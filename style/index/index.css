@@ -9,6 +9,7 @@
 @import url('../menu/menu.css');
 @import url('../sliderStandar/sliderStandarNavigation.css');
 @import url('../estadisticas/estadisticas.css');
+@import url('../footer/footer.css');
 
 @font-face {
   font-family: 'Archivo-Regular';
