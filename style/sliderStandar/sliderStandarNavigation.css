@@ -6,9 +6,22 @@
 
 .swiperNormal {
   margin-top: 3em;
+  position: relative;
 }
 
-swiper-slide img {
+.imgSlider {
   width: 100%;
   height: 100%;
+}
+
+.swiper-dim {
+  height: 20.938em !important;
+}
+
+.paginationStandar {
+  bottom: -2em !important;
+}
+
+.paginationStandarFacilities {
+  bottom: -0.5em;
 }/*# sourceMappingURL=sliderStandarNavigation.css.map */

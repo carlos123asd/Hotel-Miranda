@@ -17,6 +17,7 @@ footer{
             align-content: center;
             display: inline-block;
             margin-right: .5em;
+            color: #fff;
         }
         &__name{
             font-family: 'Archivo-Regular';
@@ -57,8 +58,27 @@ footer{
             background: #F8F8F8;
             align-content: center;
             display: inline-block;
+            margin-right: .5em;
             &:hover{
                 background: #BEAD8E;
+            }
+            &:hover .contentSec{
+                background: #fff;
+            }
+            &:hover #facebook{
+                fill: #BEAD8E;
+            }
+            &:hover #be path{
+                fill: #BEAD8E;
+            }
+            &:hover #linkedin path{
+                fill: #BEAD8E;
+            }
+            &:hover #youtube path{
+                fill: #BEAD8E;
+            }
+            &:hover #Dribbble-Light-Preview path{
+                fill: #BEAD8E;
             }
         }
         &__contentsecundary{
@@ -68,9 +88,6 @@ footer{
             margin: 0 auto;
             border-radius: 10%;
             align-content: center;
-            &:hover{
-                background: #fff;
-            }
         }
         &__titservices{
             font-family: 'OldStandardTT-Regular';
@@ -94,6 +111,7 @@ footer{
             }
             &__content2{
                 vertical-align: top;
+                margin-left: 4em;
             }
         }
         &__titcontact{
@@ -160,29 +178,4 @@ footer{
 #facebook,#twitter,#be,#linkedin,#youtube{
     margin: 0 auto;
     display: block;
-}
-#facebook{
-    &:hover{
-         fill: #BEAD8E;
-    }
-}
-#Dribbble-Light-Preview{
-    &:hover{
-         fill: #BEAD8E;
-    }
-}
-#be path{
-    &:hover{
-        fill: #BEAD8E;
-    }
-}
-#linkedin path{
-    &:hover{
-         fill: #BEAD8E;
-    }
-}
-#youtube path{
-    &:hover{
-        fill: #BEAD8E;
-    }
 }

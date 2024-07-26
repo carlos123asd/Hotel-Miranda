@@ -11,6 +11,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+    <script src="./js/sliderFacilities.js" defer></script>
+    <script src="./js/sliderPaginationStandar.js" defer></script>
+    <script src="./js/sliderMenuInit.js" defer></script>
+    <script src="./js/sliderinit.js" defer></script>
 </head>
 <body>
     <nav>
@@ -21,10 +25,10 @@
         <!--titulo-->
         <div class="navtitulos">
             <div class="navtitulos__content navtitulos--fondo">
-                <img class="navtitulos__content__img" src="./sources/imgs/H.svg" alt="Logo Hotel Miranda">
+                <img class="navtitulos__content__img" src="./sources/imgs/H.svg" alt="Logo Hotel Miranda"/>
             </div>
             <div class="navtitulos__content">
-                <img class="navtitulos__content__tit" src="./sources/imgs/HotelMiranda.svg" alt=""></div>
+                <img class="navtitulos__content__tit" src="./sources/imgs/HotelMiranda.svg" alt=""/>
             </div>
         </div>
         <!--iconos-->
@@ -55,12 +59,24 @@
     <section>
         <form class="formavailability">
             <div class='formavailability__content'>
-                <label class="formavailability__content__tag">Arrival Date</label>
-                <input class="formavailability__content__start" type="date">
+                <label for="datestart" class="formavailability__content__tag">Arrival Date</label>
+                <div class="formavailability__content__calendar">
+                    <div class="formavailability__content__calendar__content">
+                        <span class="formavailability__content__calendar__content__span"></span>
+                        <input id="datestart" class="formavailability__content__calendar__content__input" type="date">
+                    </div>
+                    <input class="formavailability__content__calendar__inputtxt" placeholder="24th march 2020" type="text">
+                </div>
             </div>
             <div class='formavailability__content formavailability--margin'>
-                <label class="formavailability__content__tag">LeDeparture Date</label>
-                <input class="formavailability__content__end" type="date">
+                <label for="dateend" class="formavailability__content__tag">LeDeparture Date</label>
+                <div class="formavailability__content__calendar">
+                    <div class="formavailability__content__calendar__content">
+                        <span class="formavailability__content__calendar__content__span"></span>
+                        <input id="dateend" class="formavailability__content__calendar__content__input" type="date">
+                    </div>
+                    <input class="formavailability__content__calendar__inputtxt" placeholder="30th march 2020" type="text">
+                </div>
             </div>
             <button class="formavailability__send" type="submit">CHECK AVAILABILITY</button>
         </form>
@@ -82,10 +98,11 @@
         <!--imgsAboutUs-->
         <div class="aboutImgs">
             <div class="aboutImgs__content">
-                <img class="aboutImgs__content__img" src="./sources/imgs/img1.jpg" alt="">
+                <img class="aboutImgs__content__img" src="./sources/imgs/img1.jpg" alt=""/>
             </div>
             <div class="aboutImgs__contenttxt">
                 <div class="aboutImgs__contenttxt__img"></div>
+                <img class="aboutImgs__contenttxt__imgshadow" src="./sources/imgs/shadowTeam.svg" alt="">
                 <div class="aboutImgs__contenttxt__tit">Strong Team</div>
                 <div class="aboutImgs__contenttxt__sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
             </div>
@@ -93,7 +110,7 @@
     
         <div class="aboutImgs">
             <div class="aboutImgs__content">
-                <img class="aboutImgs__content__img" src="./sources/imgs/img2.jpg" alt="">
+                <img class="aboutImgs__content__img" src="./sources/imgs/img2.jpg" alt=""/>
             </div>
             <div class="aboutImgs__contenttxt aboutImgs__contenttxt--color">
                 <div class="aboutImgs__contenttxt__img2"></div>
@@ -105,6 +122,7 @@
    
 
     <!--Slider Rooms-->
+    
     <section class="slider">
         <h3 class="slider__sub">Rooms</h3>
         <h2 class="slider__tit">Hand Picked Rooms</h2>
@@ -119,37 +137,33 @@
                 <div class="slider__content__topbar__img6"></div>
                 <div class="slider__content__topbar__img7"></div>
             </div>
-
-            <div class="slider__content__swip">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img class="swiperImage" src="./sources/imgs/room1.jpg" alt="Room 1">
+            <div class="swiperRoomsPicked">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" role="group">
+                        <div class="swiperImage">
+                            <img class="swiperImage__img" src="./sources/imgs/room1.jpg" alt="Room 1"/>
                         </div>
-                        <div class="swiper-slide">
-                            <img class="swiperImage" src="./sources/imgs/room2.jpg" alt="Room 2">
+                        <div class="slider__content__info">
+                            <h2 class="slider__content__info__tit">Minimal Duplex Room</h2>
+                            <p class="slider__content__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <span class="slider__content__info__precio">$345<span  class="slider__content__info__precio__night">/Night</span></span>
                         </div>
-                        ...
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
 
-            <div class="slider__content__info">
-                <h2 class="slider__content__info__tit">Minimal Duplex Room</h2>
-                <p class="slider__content__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <span class="slider__content__info__precio">$345<span  class="slider__content__info__precio__night">/Night</span></span>
+                    <div class="swiper-slide" role="group">
+                        <div class="swiperImage">
+                            <img class="swiperImage__img" src="./sources/imgs/room2.jpg" alt="Room 2"/>
+                        </div>
+                        <div class="slider__content__info">
+                            <h2 class="slider__content__info__tit">Minimal Duplex Room</h2>
+                            <p class="slider__content__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <span class="slider__content__info__precio">$345<span  class="slider__content__info__precio__night">/Night</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -170,16 +184,71 @@
     <section class="facilities">
         <h3 class="facilities__sub">Facilities</h3>
         <h2 class="facilities__tit">Core Features</h2>
-        <swiper-container class="mySwiper" pagination="true">
-            <swiper-slide>
-                <div class="facilities__card">
-                    <div class="facilities__card__img"></div>
-                    <h2 class="facilities__card__tit">Have High Rating</h2>
-                    <p class="facilities__card__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+        <div class="mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">01</span>
+                        <div class="facilities__card__img"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Have High Rating</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-        </swiper-container>
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">02</span>
+                        <div class="facilities__card__img2"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Quiet Hours</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">03</span>
+                        <div class="facilities__card__img3"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Best Locations</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">04</span>
+                        <div class="facilities__card__img4"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Free Cancellation</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">05</span>
+                        <div class="facilities__card__img5"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Payment Options</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="facilities__card">
+                        <span class="facilities__card__num">06</span>
+                        <div class="facilities__card__img6"></div>
+                        <div class="facilities__card__info">
+                            <h2 class="facilities__card__info__tit">Special Offers</h2>
+                            <p class="facilities__card__info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination paginationStandarFacilities"></div>
+        </div>
     </section>
 
     <!--Menu-->
@@ -191,86 +260,121 @@
             <h3 class="menu__contenttit__sub">MENU</h3>
             <h2 class="menu__contenttit__tit">Our Foods Menu</h2>
         </div>
-        <swiper-container class="swiperMenu" slides-per-view="1" grid-rows="3">
-            <swiper-slide>
-                <div class="menuinfo">
-                    <div class="menuinfo__contentimg">
-                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu1.jpg" alt="Menu 1">
-                    </div>
-                    <div class="menuinfo__contenttxt">
-                        <h2 class="menuinfo__contenttxt__tit">Eggs & Bacon</h2>
-                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="menuinfo">
-                    <div class="menuinfo__contentimg">
-                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu2.jpg" alt="Menu 1">
-                    </div>
-                    <div class="menuinfo__contenttxt">
-                        <h2 class="menuinfo__contenttxt__tit">Tea or Coffee</h2>
-                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+
+        <div class="swiperMenu">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu1.jpg" alt="Menu 1"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Eggs & Bacon</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="menuinfo">
-                    <div class="menuinfo__contentimg">
-                        <img class="menuinfo__contentimg__img" src="./sources/imgs/menu3.jpg" alt="Menu 1">
-                    </div>
-                    <div class="menuinfo__contenttxt">
-                        <h2 class="menuinfo__contenttxt__tit">Chia Oatmeal</h2>
-                        <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu2.jpg" alt="Menu 2"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Tea or Coffee</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
                     </div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                ...otros
-            </swiper-slide>
-          </swiper-container>
-          <div class="swiper-button-prev posback"></div>
-          <div class="swiper-button-next posnext"></div>
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu3.jpg" alt="Menu 3"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Chia Oatmeal</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu4.jpg" alt="Menu 4"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Fruit Parfait</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu5.jpg" alt="Menu 5"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Marmalade Selection</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="menuinfo">
+                        <div class="menuinfo__contentimg">
+                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu6.jpg" alt="Menu 6"/>
+                        </div>
+                        <div class="menuinfo__contenttxt">
+                            <h2 class="menuinfo__contenttxt__tit">Cheese Plate</h2>
+                            <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev posback"></div>
+            <div class="swiper-button-next posnext"></div>
+        </div>
     </section>
 
+
     <!--Slider standar-->
-    <section class="swiperNormal">
-        <swiper-container class="swiperStandar" pagination="true">
-            <swiper-slide>
-                <img src="./sources/imgs/room1.jpg" alt="img prueba1">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./sources/imgs/room2.jpg" alt="img prueba2">
-            </swiper-slide>
-        </swiper-container>
-    </section>
+    <div class="swiperNormal">
+        <div class="swiper-dim swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="imgSlider" src="./sources/imgs/room1.jpg" alt="Room 1"/>
+            </div>
+            <div class="swiper-slide">
+                <img class="imgSlider" src="./sources/imgs/room2.jpg" alt="Room 2"/>
+            </div>
+        </div>
+        <div class="swiper-pagination paginationStandar"></div>
+    </div>
 
     <!--Estadisticas-->
     <section class="estadisticas">
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est1.svg" alt="Proyectos Completados">
+                <img src="./sources/imgs/estadisticas/est1.svg" alt="Proyectos Completados"/>
             </div>
             <span class="estadisticas__tit">84k<span>+</span></span>
             <span class="estadisticas__sub">Projects are Completed</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est2.svg" alt="Active Backers">
+                <img src="./sources/imgs/estadisticas/est2.svg" alt="Active Backers"/>
             </div>
             <span class="estadisticas__tit">10M<span>+</span></span>
             <span class="estadisticas__sub">Active Backers Around World</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est3.svg" alt="Categories Served">
+                <img src="./sources/imgs/estadisticas/est3.svg" alt="Categories Served"/>
             </div>
             <span class="estadisticas__tit">02K<span>+</span></span>
             <span class="estadisticas__sub">Categories Served</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est4.svg" alt="Idea Raised Funds">
+                <img src="./sources/imgs/estadisticas/est4.svg" alt="Idea Raised Funds"/>
             </div>
             <span class="estadisticas__tit">100M<span>+</span></span>
             <span class="estadisticas__sub">Idea Raised Funds</span>
@@ -286,7 +390,7 @@
             <p class="footer__p">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
             <div>
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="facebook" width="20px" height="20px" id="facebook" fill="white" viewBox="-192 -192 2304.00 2304.00" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.84"/>
@@ -296,7 +400,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="twitter" width="15px" height="15px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -306,7 +410,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="be" width="20px" height="20px" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -316,7 +420,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="linkedin" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -326,7 +430,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="youtube" width="15px" height="15px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -359,7 +463,7 @@
             <div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="./sources//imgs/contact/phone.svg" alt="">
+                        <img src="./sources//imgs/contact/phone.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Phone Number</span>
@@ -368,7 +472,7 @@
                 </div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="./sources//imgs/contact/correo.svg" alt="">
+                        <img src="./sources//imgs/contact/correo.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Mail</span>
@@ -377,7 +481,7 @@
                 </div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="./sources//imgs/contact/map.svg" alt="">
+                        <img src="./sources//imgs/contact/map.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Location</span>

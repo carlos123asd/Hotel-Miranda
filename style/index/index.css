@@ -11,6 +11,7 @@
 @import url('../estadisticas/estadisticas.css');
 @import url('../footer/footer.css');
 @import url('../aboutPage/about.css');
+@import url('../room/room.css');
 
 @font-face {
   font-family: 'Archivo-Regular';
@@ -25,6 +26,11 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../../sources/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../../sources/fonts/Oswald/Oswald-Regular.ttf');
 }
 
 html, * {

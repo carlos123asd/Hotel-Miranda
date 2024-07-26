@@ -1,4 +1,5 @@
 @use '../mixin/buildHeaderMixin.scss';
+@use '../mixin/configImgMixer.scss';
 
 .aboutheader{
     width: 100%;
@@ -15,6 +16,7 @@
     &__tit{
         @include buildHeaderMixin.titulo();
         color: #fff;
+        width: 5.938em;
     }
     &__btn{
         @include buildHeaderMixin.btnsThird();
@@ -56,6 +58,15 @@
         height: 9.875em;
         align-content: center;
         display: inline-block;
+        &:hover .paths path{
+            fill: #fff;
+        }
+        &:hover{
+            background-color: #BEAD8E;
+        }
+        &:hover span{
+            color: #fff;
+        }
         &__img{
             display: block;
             margin: 0 auto;
@@ -122,5 +133,58 @@
     &__btn{
         @include buildHeaderMixin.btnsFirst();
         color: #fff;
+    }
+}
+
+.counter{
+    width: 20.938em;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    &__contentmain{
+        margin-top: 3.5em;
+        padding-left: 1.25em
+    }
+    &__sub{
+        @include buildHeaderMixin.subtitulo();
+        margin-bottom: 1.5em
+    }
+    &__tit{
+        @include buildHeaderMixin.titulo();
+    }
+    &__content{
+        margin-bottom: 4em;
+        &__img{
+            display: inline-block;
+            margin-right: 1em;
+        }
+        &__txt{
+            display: inline-block;
+            &__text{
+                font-family: 'Roboto';
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: left;
+                display: block;                
+            }
+            &__num{
+                font-family: 'OldStandardTT-Regular';
+                font-size: 3.75rem;
+                font-weight: 400;
+                line-height: 60px;
+                letter-spacing: -1.7999999523162842px;
+                text-align: left;
+                display: block;   
+            }
+        }
+        &__flecha{
+            vertical-align: top;
+            margin-top: 1em;
+            margin-left: 3em;
+        }
+        &__flecha:nth-child(2){
+            margin-left: 2.2em;
+        }
     }
 }

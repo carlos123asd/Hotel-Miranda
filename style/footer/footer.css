@@ -16,6 +16,7 @@ footer .footer__logo {
   align-content: center;
   display: inline-block;
   margin-right: 0.5em;
+  color: #fff;
 }
 footer .footer__name {
   font-family: "Archivo-Regular";
@@ -55,9 +56,28 @@ footer .footer__contentprimary {
   background: #F8F8F8;
   align-content: center;
   display: inline-block;
+  margin-right: 0.5em;
 }
 footer .footer__contentprimary:hover {
   background: #BEAD8E;
+}
+footer .footer__contentprimary:hover .contentSec {
+  background: #fff;
+}
+footer .footer__contentprimary:hover #facebook {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #be path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #linkedin path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #youtube path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #Dribbble-Light-Preview path {
+  fill: #BEAD8E;
 }
 footer .footer__contentsecundary {
   width: 24px;
@@ -66,9 +86,6 @@ footer .footer__contentsecundary {
   margin: 0 auto;
   border-radius: 10%;
   align-content: center;
-}
-footer .footer__contentsecundary:hover {
-  background: #fff;
 }
 footer .footer__titservices {
   font-family: "OldStandardTT-Regular";
@@ -93,6 +110,7 @@ footer .footer__lista__content1, footer .footer__lista__content2 {
 }
 footer .footer__lista__content2 {
   vertical-align: top;
+  margin-left: 4em;
 }
 footer .footer__titcontact {
   font-family: "OldStandardTT-Regular";
@@ -156,24 +174,4 @@ footer .footer__copy__tit {
 #facebook, #twitter, #be, #linkedin, #youtube {
   margin: 0 auto;
   display: block;
-}
-
-#facebook:hover {
-  fill: #BEAD8E;
-}
-
-#Dribbble-Light-Preview:hover {
-  fill: #BEAD8E;
-}
-
-#be path:hover {
-  fill: #BEAD8E;
-}
-
-#linkedin path:hover {
-  fill: #BEAD8E;
-}
-
-#youtube path:hover {
-  fill: #BEAD8E;
 }/*# sourceMappingURL=footer.css.map */

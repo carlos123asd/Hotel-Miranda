@@ -1,0 +1,80 @@
+.aboutHeaderRoom {
+  height: 19.563em;
+}
+
+.slider__content {
+  height: auto;
+}
+.slider__content__topbar {
+  top: 15.5em;
+}
+.slider__pagination {
+  -moz-text-align-last: center;
+       text-align-last: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+.slider__pagination__back, .slider__pagination__next, .slider__pagination__one, .slider__pagination__two, .slider__pagination__three, .slider__pagination__select, .slider__pagination__ten {
+  display: inline-block;
+  margin-right: 2em;
+}
+.slider__pagination__one, .slider__pagination__two, .slider__pagination__three, .slider__pagination__select, .slider__pagination__ten {
+  font-family: "oswald";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+.slider__pagination__two {
+  width: 39px;
+  height: 39px;
+  color: #fff;
+  background-color: #BEAD8E;
+  align-content: center;
+}
+.slider__pagination__back, .slider__pagination__next {
+  vertical-align: middle;
+}
+
+.room__imgRoom {
+  width: 100%;
+  height: 100%;
+}
+.room__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: center;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+}
+.room__p {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.8em;
+  width: 18.125em;
+  font-family: "Roboto";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+.room__content {
+  text-align: -webkit-center;
+}
+.room__content__precio {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BEAD8E;
+}
+.room__content__state {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BDBDBD;
+}/*# sourceMappingURL=room.css.map */

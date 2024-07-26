@@ -42,7 +42,7 @@
 }
 
 .menuinfo {
-  padding: 1.25em;
+  padding: 0 1.25em;
 }
 .menuinfo__contentimg {
   display: inline-block;
@@ -60,6 +60,7 @@
   display: inline-block;
   width: 11.563em;
   margin-left: 2em;
+  vertical-align: top;
 }
 .menuinfo__contenttxt__tit {
   font-family: "OldStandardTT-Regular";

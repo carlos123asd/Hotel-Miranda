@@ -38,7 +38,7 @@
     }
 }
 .menuinfo{
-    padding: 1.25em;
+    padding: 0 1.25em;
     &__contentimg{
         display: inline-block;
         width: 120px;
@@ -55,6 +55,7 @@
         display: inline-block;
         width: 11.563em;
         margin-left: 2em;
+        vertical-align: top;
         &__tit{
             font-family: 'OldStandardTT-Regular';
             font-size: 1.50rem;
