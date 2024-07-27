@@ -17,6 +17,15 @@ nav .navclose__img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: none;
+}
+nav .navclose__menu {
+  background-image: url("../../sources/imgs/menu.svg");
+  width: 20px;
+  height: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 nav .navtitulos {
   display: inline-block;
@@ -31,22 +40,10 @@ nav .navtitulos__content {
   align-content: center;
 }
 nav .navtitulos__content__img {
-  background-image: url("../../sources/imgs/H.svg");
-  width: 12px;
-  height: 12px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: block;
   margin: 0 auto;
 }
 nav .navtitulos__content__tit {
-  background-image: url("../../sources/imgs/HotelMiranda.svg");
-  width: 60.52px;
-  height: 20.77px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-left: 0.5em;
 }
 nav .navtitulos--fondo {
@@ -55,6 +52,33 @@ nav .navtitulos--fondo {
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
   background: #FFFFFF;
   align-content: center;
+}
+nav .navMenu {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 17.41px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 6em;
+  display: none;
+}
+nav .navMenu__about {
+  display: inline-block;
+  margin-right: 3em;
+}
+nav .navMenu__rooms {
+  display: inline-block;
+  margin-right: 3em;
+}
+nav .navMenu__offers {
+  display: inline-block;
+  margin-right: 3em;
+}
+nav .navMenu__contact {
+  display: inline-block;
+  margin-right: 3em;
 }
 nav .naviconos {
   display: inline-block;
@@ -101,4 +125,58 @@ nav .naviconos__search {
 }
 .nav__list li {
   margin-top: 1.484em;
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    height: 7.5em;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+    z-index: 2000;
+    background-color: #fff;
+  }
+  nav .navtitulos--fondo {
+    width: 80px;
+    height: 80px;
+  }
+  nav .navtitulos__content {
+    margin-right: 0.6em;
+  }
+  nav .navtitulos__content__img {
+    width: 31px;
+    height: 44px;
+  }
+  nav .navtitulos__content__tit {
+    width: 137px;
+    height: 56px;
+  }
+  nav .navclose {
+    display: none;
+  }
+  nav .naviconos {
+    top: 0.5em;
+    right: 0;
+  }
+  nav .naviconos__search {
+    margin: 0;
+  }
+  nav .navMenu {
+    display: inline-block !important;
+    align-content: space-evenly;
+    margin-left: 4%;
+  }
+}
+.aux, .aux2 {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  align-content: center;
+  text-align: -webkit-center;
+  border: 2px solid rgba(133, 133, 133, 0.3019607843);
+}
+
+.aux {
+  margin-right: 1em;
 }/*# sourceMappingURL=nav.css.map */

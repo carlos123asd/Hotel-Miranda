@@ -11,6 +11,10 @@ nav{
         align-content: center;
         &__img{
             @include configImgMixer.imgconfig('../../sources/imgs/close.svg',15.56px,15.56px);
+            display: none;
+        }
+        &__menu{
+            @include configImgMixer.imgconfig('../../sources/imgs/menu.svg',20px,13px); 
         }
     }
     .navtitulos{
@@ -24,12 +28,10 @@ nav{
             vertical-align: middle;
             align-content: center;
             &__img{
-               @include configImgMixer.imgconfig('../../sources/imgs/H.svg',12px,12px);
                 display: block;
                 margin: 0 auto;
             }
             &__tit{
-                @include configImgMixer.imgconfig('../../sources/imgs/HotelMiranda.svg',60.52px,20.77px);
                 margin-left: .5em;
             }
         }
@@ -39,6 +41,33 @@ nav{
             box-shadow: 0px 14px 24px 0px #8B8B8B40;
             background: #FFFFFF;
             align-content: center;
+        }
+    }
+    .navMenu{
+        font-family: 'Archivo-Regular';
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 17.41px;
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-left: 6em;
+        display: none;
+        &__about{
+            display: inline-block;
+            margin-right: 3em;
+        }   
+        &__rooms{
+            display: inline-block;
+            margin-right: 3em;
+        }
+        &__offers{
+            display: inline-block;
+            margin-right: 3em;
+        }
+        &__contact{
+            display: inline-block;
+            margin-right: 3em;
         }
     }
    .naviconos{
@@ -78,4 +107,59 @@ nav{
             margin-top: 1.484em;
         }
     }
+}
+
+@media only screen and (min-width:1000px){
+    nav{
+        height: 7.5em;
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        left: 10%;
+        z-index: 2000;
+        background-color: #fff;
+        .navtitulos{
+            &--fondo{
+                width: 80px;
+                height: 80px;
+            }
+            &__content{
+                margin-right: .6em;
+                &__img{
+                    width: 31px;
+                    height: 44px;
+                }
+                &__tit{
+                    width: 137px;
+                    height: 56px;
+                }
+            }
+        }
+        .navclose{
+            display: none;
+        }
+        .naviconos{
+            top: .5em;
+            right: 0;
+            &__search{
+                margin: 0;
+            }
+        }
+        .navMenu{
+            display: inline-block !important;
+            align-content: space-evenly;
+            margin-left: 4%;
+        }
+    }
+}
+.aux,.aux2{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    align-content: center;
+    text-align: -webkit-center;
+    border: 2px solid #8585854D
+}
+.aux{
+    margin-right: 1em;
 }

@@ -174,4 +174,10 @@ footer .footer__copy__tit {
 #facebook, #twitter, #be, #linkedin, #youtube {
   margin: 0 auto;
   display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer .footer {
+    background-color: #E4E4E4;
+  }
 }/*# sourceMappingURL=footer.css.map */
