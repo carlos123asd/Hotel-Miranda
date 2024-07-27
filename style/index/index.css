@@ -13,6 +13,7 @@
 @import url('../aboutPage/about.css');
 @import url('../room/room.css');
 @import url('../roomdetails/roomdetails.css');
+@import url('../offers/offers.css');
 
 @font-face {
   font-family: 'Archivo-Regular';
