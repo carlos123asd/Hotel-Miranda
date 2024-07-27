@@ -26,6 +26,9 @@
                 @include buildHeaderMixin.btnsThridTxtLink();
             }
         }
+        &--large{
+            width: 12.938em;
+        }
     }
 }
 

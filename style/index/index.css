@@ -12,6 +12,7 @@
 @import url('../footer/footer.css');
 @import url('../aboutPage/about.css');
 @import url('../room/room.css');
+@import url('../roomdetails/roomdetails.css');
 
 @font-face {
   font-family: 'Archivo-Regular';
