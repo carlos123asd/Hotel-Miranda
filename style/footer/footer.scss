@@ -184,6 +184,28 @@ footer{
     footer{
         & .footer{
             background-color: #E4E4E4;
+            display: flex;
+            justify-content: space-evenly;
+            height: 34.563em;
+            & .contentfooter1{
+                width: 16.875em;
+            }
+            & .contentfooter2{
+                width: 26.188em;
+            }
+            & .contentfooter3{
+                width: 16.875em;
+            }
+            &__copy{
+                display: flex;
+                justify-content: space-around;
+                height: 5em;
+                align-items: center;
+                &__tit,&__sub{
+                    display: inline-block;
+                    margin: 0;
+                }
+            }
         }
     }
 }

@@ -91,3 +91,25 @@
     top: 100% !important;
     left: 76% !important;
 }
+
+@media only screen and (min-width:1000px){
+    .menu{
+        &__content{
+            width: 229px;
+            height: 229px;
+            position: absolute;
+            left: 0;
+            margin-left: 4em;
+            &__img{
+                @include configImgMixer.imgconfig('../../sources/imgs/donutsleft.svg',100%,100%);
+            }
+        }
+        &__contenttit{
+            padding: 0 20.5em;
+            padding-top: 12.188em;
+            &__sub{
+                margin-bottom: 4em;
+            }
+        }
+    }
+}

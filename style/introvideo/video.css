@@ -47,4 +47,39 @@
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: #fff;
+}
+
+@media only screen and (min-width: 1000px) {
+  .video {
+    background: #AD9D82;
+    margin-top: 15.75em;
+    padding: 0;
+    position: relative;
+    height: 43.75em;
+  }
+  .video__tit {
+    width: 7.75em;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: -2.4000000954px;
+  }
+  .video__p {
+    width: 30.313em;
+    margin-bottom: 2em;
+  }
+  .video .videocontent {
+    width: 70%;
+    background: #222222;
+    padding-left: 10%;
+    padding-top: 8.135em;
+    height: 100%;
+  }
+  .video .videocontent video {
+    position: absolute;
+    width: 570px;
+    height: 460px;
+    top: calc(43.75em - 50% - 260px);
+    left: calc(100vw - 30% - 300px);
+  }
 }/*# sourceMappingURL=video.css.map */

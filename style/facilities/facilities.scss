@@ -134,3 +134,36 @@
 .swiper-pagination-bullet-active{
     background: #BEAD8E !important;
 }
+
+.auxfacilities{
+    display: none;
+}
+
+@media only screen and (min-width:1000px){
+    .mySwiper{
+        display: none;
+    }
+    .facilities{
+        height: auto;
+        margin-top: 10em;
+        & .auxfacilities{
+            display: block;
+            columns: 3;
+            margin: 0 auto;
+            width: 60%;
+            gap: 5em;
+            margin-top: 3em;
+            & .swiper-slide{
+                width: 100%;
+                height: 23.125em;
+            }
+        }
+        &__card{
+            &__info{
+                &__p{
+                    width: 20.625em;
+                }
+            }
+        }
+    }
+}

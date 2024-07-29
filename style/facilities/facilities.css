@@ -160,4 +160,34 @@
 
 .swiper-pagination-bullet-active {
   background: #BEAD8E !important;
+}
+
+.auxfacilities {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mySwiper {
+    display: none;
+  }
+  .facilities {
+    height: auto;
+    margin-top: 10em;
+  }
+  .facilities .auxfacilities {
+    display: block;
+    -moz-columns: 3;
+         columns: 3;
+    margin: 0 auto;
+    width: 60%;
+    gap: 5em;
+    margin-top: 3em;
+  }
+  .facilities .auxfacilities .swiper-slide {
+    width: 100%;
+    height: 23.125em;
+  }
+  .facilities__card__info__p {
+    width: 20.625em;
+  }
 }/*# sourceMappingURL=facilities.css.map */

@@ -96,4 +96,29 @@
   height: 36px !important;
   top: 100% !important;
   left: 76% !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .menu__content {
+    width: 229px;
+    height: 229px;
+    position: absolute;
+    left: 0;
+    margin-left: 4em;
+  }
+  .menu__content__img {
+    background-image: url("../../sources/imgs/donutsleft.svg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menu__contenttit {
+    padding: 0 20.5em;
+    padding-top: 12.188em;
+  }
+  .menu__contenttit__sub {
+    margin-bottom: 4em;
+  }
 }/*# sourceMappingURL=menu.css.map */
