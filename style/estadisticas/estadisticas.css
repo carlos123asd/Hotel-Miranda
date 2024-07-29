@@ -33,4 +33,14 @@
 
 .estadisticasbloq {
   margin-bottom: 4em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .estadisticas {
+    width: 73.125em;
+    height: 21.75em;
+    display: flex;
+    justify-content: space-between;
+    margin: 8em auto;
+  }
 }/*# sourceMappingURL=estadisticas.css.map */

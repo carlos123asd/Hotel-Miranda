@@ -78,6 +78,9 @@
   line-height: 24px;
   text-align: left;
 }
+.menuinfo__contenttxt__img {
+  display: none;
+}
 
 .swiperMenu {
   width: 100%;
@@ -99,6 +102,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .menu {
+    margin-bottom: 4em;
+  }
   .menu__content {
     width: 229px;
     height: 229px;
@@ -120,5 +126,61 @@
   }
   .menu__contenttit__sub {
     margin-bottom: 4em;
+  }
+  .swiperMenu {
+    padding-left: 20.5em;
+    margin-top: 3em;
+  }
+  .slide-width {
+    width: 37.938em !important;
+  }
+  .slide-width:hover .menuinfo {
+    height: 100%;
+    background-color: #222222;
+    color: #fff;
+  }
+  .slide-width:hover .menuinfo__contenttxt__img {
+    display: block;
+  }
+  .menuinfo {
+    align-content: center;
+    height: 7.5em !important;
+    padding-left: 0;
+  }
+  .menuinfo__contenttxt {
+    height: 7.5em;
+    margin: 0;
+    padding-left: 1.2em;
+    align-content: center;
+    position: relative;
+  }
+  .menuinfo__contenttxt__p {
+    width: 20.793em;
+  }
+  .menuinfo__contenttxt__img {
+    position: absolute;
+    right: 2em;
+    top: 30%;
+    margin-right: 1em;
+  }
+  .posback, .posnext {
+    width: 70px !important;
+    height: 70px !important;
+    display: inline-block !important;
+    position: relative !important;
+    text-align: center;
+    align-content: center;
+  }
+  .contentnavigation {
+    width: 11.25em;
+    position: absolute;
+    top: 15em;
+    right: 15em;
+  }
+  .swiper-button-prev::after {
+    font-size: 1em !important;
+  }
+  .swiper-button-next::after {
+    font-size: 1em !important;
   }
 }/*# sourceMappingURL=menu.css.map */

@@ -51,6 +51,7 @@
 
 @media only screen and (min-width: 1000px) {
   .video {
+    width: 100%;
     background: #AD9D82;
     margin-top: 15.75em;
     padding: 0;

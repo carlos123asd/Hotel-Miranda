@@ -5,9 +5,13 @@ const swiperMenu = new Swiper('.swiperMenu', {
         rows: 3
     },
     loop: false,
-    spaceBetween: 1000,
     navigation: {
       nextEl: '.posnext',
       prevEl: '.posback',
+    },
+    breakpoints: {
+      1000: {
+        slidesPerView: '2',
+      }
     }
 });
