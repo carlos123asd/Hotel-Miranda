@@ -191,3 +191,166 @@
         }
     }
 }
+
+@media only screen and (min-width:1000px){
+    .aboutheader{
+        height: 22.063em;
+        padding-left: 15%;
+        padding-top: 9.885em;
+        &__tit{
+            font-size: 4.50rem;
+            font-weight: 400;
+            line-height: 72px;
+            letter-spacing: -2.1600000858306885px;
+            text-align: left;            
+        }
+        &__btn{
+            width: 12.5em !important;
+            margin-right: 12.2em;
+        }
+    }
+
+    .videoabout{
+        &__play{
+            width: 73.125em !important;
+            height: 40.625em !important;
+            display: block;
+            margin: 0 auto;
+        }
+        & p{
+            width: 14.5em;
+            font-size: 4.50rem;
+            font-weight: 400;
+            line-height: 88.99px;
+            letter-spacing: -2.1600000858306885px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        & .fourpoints{
+            width: 73.125em !important;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            margin-top: 5em;
+            &__content{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .taketour{
+        width: 73.125em;
+        height: 31.25em;
+        display: flex;
+        gap: 3.572em;
+        padding: 2.625em;
+        box-shadow: 0px 14px 24px 0px #B8B8B81A;
+        margin-top: 0;
+        & div:nth-child(2){
+            align-content: space-evenly;
+        }
+        &__img{
+            width: 530px;
+            height: 420px;
+        }
+        &__tit{
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 59.33px;
+            letter-spacing: -1.440000057220459px;
+            text-align: left;
+        }
+        &__p{
+            width: 100%;
+        }
+    }
+
+    .facilities{
+        &__tit{
+            font-size: 5.00rem;
+            font-weight: 400;
+            line-height: 80px;
+            letter-spacing: -2.4000000953674316px; 
+            margin-bottom: 1em;
+        }
+
+        &__sub{
+            color: #C2C2C2;
+            margin-top: 4em;      
+        }
+
+        & .auxfacilities{
+            width: 74.375em;
+            height: 45.5em;
+            columns: unset;
+            margin-bottom: 3em;
+            & div:nth-child(1), & div:nth-child(2){
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 1em;
+            }
+        }
+        &__card{
+            width: 23.125em;
+            height: 21.813em;
+            position: relative;
+            background: #292929;
+            padding: 4.063em 4.063em;
+            margin-bottom: 2em;
+            align-content: space-evenly;
+            padding-bottom: 0;
+            &__num{
+                font-size:  7.50rem;
+                font-weight: 700;
+                line-height: 130px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #222222;
+                margin: 0;
+            }
+            &__img,&__img2,&__img3,&__img4,&__img5,&__img6{
+                top: 5em;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .counter{
+        width: 73.491em;
+        height: 48.553em;
+        &__tit{
+            font-size: 5.00rem;
+            font-weight: 400;
+            line-height: 98.88px;
+            letter-spacing: -2.4000000953674316px;
+            text-align: left;
+        }
+        &__sub{
+            color: #777777;
+        }
+        &__contentmain{
+            display: flex;
+            justify-content: space-around;
+        }
+        &__content{
+            &__txt{
+                &__text{
+                    color: #777777;
+                }
+            }
+        }
+    }
+
+    .swiperNormall{
+        margin-bottom: 5em !important;
+        &__imgcontent{
+            width: 570px;
+            height: 400px;
+        }
+    }
+}

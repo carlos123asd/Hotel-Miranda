@@ -40,6 +40,9 @@
                 font-weight: 700;
                 line-height: 13.06px;
             }
+        }
+        &__absolute{
+            display: none;
         }           
     }
     &__sub{
@@ -148,4 +151,105 @@
 .slider__content__topbar--posOffers{
     top: 90% !important;
     left: 10%;
+}
+.listblock{
+    display: none;
+}
+
+@media only screen and (min-width:1000px){
+    .offers{
+        width: 73.125em;
+        margin: 0 auto;
+        &__img{
+            height: 35.625em;
+            &__precio1,&__precio2{
+                display: none !important;
+            }
+            &__absolute1{
+                display: block !important;
+                font-size: 1.88rem;
+                font-weight: 700;
+                line-height: 43.52px;
+                color: #BEAD8E;
+                position: absolute;
+                right: 1.5em;
+                top: 1.6em;
+                & span{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 17.41px;
+                    text-align: right;
+                    color: #BEAD8E;
+                }
+            }
+            &__absolute2{
+                display: block !important;
+                font-size: 2.50rem;
+                font-weight: 700;
+                line-height: 32.64px;
+                color: #DE5777;
+                position: absolute;
+                right: 1.4em;
+                top: 2.5em;
+                & span{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 17.41px;
+                    text-align: right;
+                    color: #DE5777;
+                }
+            }
+        }
+        &__tit{
+            border-bottom: 2px solid #ECECEC;
+            padding-bottom: 1em;
+        }
+        &__p{
+            width: 31em;
+        }
+    }
+    .contentaux2{
+        position: absolute;
+        padding: 3.75em 3.661em;
+        z-index: 2000;
+        background: #fff;
+        bottom: -70%;
+        left: 6%;
+        border-top: 6px solid #BDAC8D;
+        &--flex{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .contentaux{
+        border-top: 6px solid #BDAC8D;
+        position: relative;
+        margin-bottom: 30.438em;
+    }
+    .listnone{
+        display: none;
+    }
+    .listblock{
+        display: block;
+        &__listan1{
+            margin-right: 5em;
+        }
+    }
+
+
+    .popular{
+        &--dark{
+            background: #222222;
+        }
+        &__tit{
+            font-size: 5rem;
+            font-weight: 400;
+            line-height: 80px;
+            letter-spacing: -2.4000000953674316px;
+            margin-bottom: 1em;
+        }
+        &__sub{
+            margin-bottom: 5em;
+        }
+    }
 }

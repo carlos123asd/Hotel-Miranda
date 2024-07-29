@@ -70,6 +70,10 @@ nav .navMenu {
   margin-left: 6em;
   display: none;
 }
+nav .navMenu a {
+  text-decoration: none;
+  color: #111111 !important;
+}
 nav .navMenu__about {
   display: inline-block;
   margin-right: 3em;

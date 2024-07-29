@@ -190,4 +190,10 @@
   .facilities__card__info__p {
     width: 20.625em;
   }
+  .facilities__card__num--light {
+    color: rgba(34, 34, 34, 0.0392156863) !important;
+  }
+  .facilities--light {
+    background: #fff !important;
+  }
 }/*# sourceMappingURL=facilities.css.map */

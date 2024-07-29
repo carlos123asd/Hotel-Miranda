@@ -232,4 +232,152 @@
 }
 .counter__content__flecha:nth-child(2) {
   margin-left: 2.2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutheader {
+    height: 22.063em;
+    padding-left: 15%;
+    padding-top: 9.885em;
+  }
+  .aboutheader__tit {
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -2.1600000858px;
+    text-align: left;
+  }
+  .aboutheader__btn {
+    width: 12.5em !important;
+    margin-right: 12.2em;
+  }
+  .videoabout__play {
+    width: 73.125em !important;
+    height: 40.625em !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .videoabout p {
+    width: 14.5em;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 88.99px;
+    letter-spacing: -2.1600000858px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .videoabout .fourpoints {
+    width: 73.125em !important;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 5em;
+  }
+  .videoabout .fourpoints__content {
+    width: 200px;
+    height: 200px;
+  }
+  .taketour {
+    width: 73.125em;
+    height: 31.25em;
+    display: flex;
+    gap: 3.572em;
+    padding: 2.625em;
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
+    margin-top: 0;
+  }
+  .taketour div:nth-child(2) {
+    align-content: space-evenly;
+  }
+  .taketour__img {
+    width: 530px;
+    height: 420px;
+  }
+  .taketour__tit {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 59.33px;
+    letter-spacing: -1.4400000572px;
+    text-align: left;
+  }
+  .taketour__p {
+    width: 100%;
+  }
+  .facilities__tit {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -2.4000000954px;
+    margin-bottom: 1em;
+  }
+  .facilities__sub {
+    color: #C2C2C2;
+    margin-top: 4em;
+  }
+  .facilities .auxfacilities {
+    width: 74.375em;
+    height: 45.5em;
+    -moz-columns: unset;
+         columns: unset;
+    margin-bottom: 3em;
+  }
+  .facilities .auxfacilities div:nth-child(1), .facilities .auxfacilities div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .facilities__card {
+    width: 23.125em;
+    height: 21.813em;
+    position: relative;
+    background: #292929;
+    padding: 4.063em 4.063em;
+    margin-bottom: 2em;
+    align-content: space-evenly;
+    padding-bottom: 0;
+  }
+  .facilities__card__num {
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 130px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #222222;
+    margin: 0;
+  }
+  .facilities__card__img, .facilities__card__img2, .facilities__card__img3, .facilities__card__img4, .facilities__card__img5, .facilities__card__img6 {
+    top: 5em;
+    margin-bottom: 0;
+  }
+  .counter {
+    width: 73.491em;
+    height: 48.553em;
+  }
+  .counter__tit {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 98.88px;
+    letter-spacing: -2.4000000954px;
+    text-align: left;
+  }
+  .counter__sub {
+    color: #777777;
+  }
+  .counter__contentmain {
+    display: flex;
+    justify-content: space-around;
+  }
+  .counter__content__txt__text {
+    color: #777777;
+  }
+  .swiperNormall {
+    margin-bottom: 5em !important;
+  }
+  .swiperNormall__imgcontent {
+    width: 570px;
+    height: 400px;
+  }
 }/*# sourceMappingURL=about.css.map */

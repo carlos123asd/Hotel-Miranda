@@ -164,6 +164,15 @@
                     width: 20.625em;
                 }
             }
+            &__num{
+                &--light{
+                    color: #2222220A !important;
+                }
+            }
+        }
+
+        &--light{
+            background: #fff !important;
         }
     }
 }

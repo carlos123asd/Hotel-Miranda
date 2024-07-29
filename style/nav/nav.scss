@@ -59,6 +59,10 @@ nav{
         vertical-align: middle;
         margin-left: 6em;
         display: none;
+        & a{
+            text-decoration: none;
+            color:#111111 !important;
+        }
         &__about{
             display: inline-block;
             margin-right: 3em;

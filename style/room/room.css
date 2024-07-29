@@ -77,4 +77,26 @@
   font-weight: 700;
   line-height: 17.41px;
   color: #BDBDBD;
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutheader__tit--dim {
+    width: 27.875em !important;
+  }
+  .swiperrooms--dim {
+    width: 23.125em !important;
+    height: 27.375em !important;
+  }
+  .room__imgRoom--dim {
+    height: 240px;
+  }
+  .slider__content__topbar {
+    width: 19.375em;
+    height: 3.125em;
+    right: 2em;
+  }
+  .wrapper--grid {
+    display: grid;
+    grid-column: 3;
+  }
 }/*# sourceMappingURL=room.css.map */
