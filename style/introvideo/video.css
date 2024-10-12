@@ -48,6 +48,10 @@
   letter-spacing: 2.79px;
   color: #fff;
 }
+.video iframe {
+  width: 100%;
+  height: 16.875em;
+}
 
 @media only screen and (min-width: 1000px) {
   .video {
@@ -76,11 +80,16 @@
     padding-top: 8.135em;
     height: 100%;
   }
-  .video .videocontent video {
-    position: absolute;
-    width: 570px;
+  .video .videocontent iframe {
+    width: 35%;
     height: 460px;
+    position: absolute;
     top: calc(43.75em - 50% - 260px);
-    left: calc(100vw - 30% - 300px);
+    right: 5vw;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .video .videocontent iframe {
+    right: 10vw;
   }
 }/*# sourceMappingURL=video.css.map */
