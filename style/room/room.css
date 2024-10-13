@@ -2,11 +2,87 @@
   height: 19.563em;
 }
 
+.contentAuxRoom {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
 .slider__content {
   height: auto;
 }
 .slider__content__topbar {
   top: 15.5em;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider__content__topbar__img {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/bed.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img2 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/wifi.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img3 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/car.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img4 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/acondicionado.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img5 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/gym.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img6 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/tabaco.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img7 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/alcohol.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slider__pagination {
   -moz-text-align-last: center;
@@ -47,7 +123,6 @@
   line-height: 24px;
   letter-spacing: -0.7200000286px;
   text-align: center;
-  margin-top: 1.8em;
   margin-bottom: 0.8em;
 }
 .room__p {

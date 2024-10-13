@@ -1,11 +1,50 @@
+@use '../mixin/configImgMixer.scss';
 .aboutHeaderRoom{
     height: 19.563em
+}
+.contentAuxRoom{
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 .slider{
     &__content{
         height: auto;
         &__topbar{
             top: 15.5em;
+            box-shadow: 0px 8px 16px 0px #8A8A8A0D;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__img{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/bed.svg',16px,16px);
+            }
+            &__img2{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/wifi.svg',16px,16px);
+            }
+            &__img3{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/car.svg',16px,16px);
+            }
+            &__img4{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/acondicionado.svg',16px,16px);
+            }
+            &__img5{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/gym.svg',16px,16px);
+            }
+            &__img6{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/tabaco.svg',16px,16px);
+            }
+            &__img7{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../sources/imgs/topbar/alcohol.svg',16px,16px);
+            }
         }
     }
     &__pagination{
@@ -47,7 +86,6 @@
         line-height: 24px;
         letter-spacing: -0.7200000286102295px;
         text-align: center;
-        margin-top: 1.8em;
         margin-bottom: .8em;
     }
     &__p{
