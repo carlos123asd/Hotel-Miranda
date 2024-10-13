@@ -32,15 +32,39 @@
         text-align: left;
         color: #C2C2C2;
     }
-    &__play{
-        margin: 1.5em 0;
-    }
     &__btn{
         @include buildHeaderMixin.btnsFirst();
     }
-    & iframe{
+    &__container{
+        position: relative;
         width: 100%;
         height: 16.875em;
+        background: url('../../sources/video/poster.jpg') center/cover no-repeat;
+        & video{
+            width: 100%;
+            height: 16.875em;
+        }
+        &__play{
+            margin: 1.5em 0;
+            object-fit: fill;
+            display: none;
+        }
+        &__button{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            right: 35%;
+            top: 32%;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    } 
+    & .auxcontent{
+        margin-bottom: 3rem;
     }
 }
 
@@ -63,18 +87,40 @@
             width: 30.313em;
             margin-bottom: 2em;
         }
+        & .auxcontent{
+            width: 40%;
+            height: 460px;
+            position: absolute;
+            top: calc(43.75em - 45% - (520px / 2));
+            right: -20vw;
+        }
         & .videocontent{
             width: 70%;
             background: #222222;
             padding-left: 10%;
             padding-top: 8.135em;
             height: 100%;
-            & iframe{
-                width: 35%;
-                height: 460px;
+            position: relative;
+        }
+        &__container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            &__play{
+                margin: 0;
+            }
+            & video{
+                width: 100%;
+                height: 100%;
+                z-index: 1000;
+                top: 0;
+            }
+            &__button{
                 position: absolute;
-                top: calc(43.75em - 50% - (520px / 2));
-                right: calc(100vw - 95vw);
+                z-index: 1001;
+                top: 40%;
+                right: 34%;
             }
         }
     }
@@ -82,9 +128,15 @@
 
 @media only screen and (min-width:1300px){
     .video{
-        & .videocontent{
-            & iframe{
-                right: calc(100vw - 90vw);
+        & .auxcontent{
+            width: 40.625em;
+            right: -15vw;
+        }
+        &__container{
+            &__button{
+                right: 39%;
+                width: 120px;
+                height: 120px;
             }
         }
     }

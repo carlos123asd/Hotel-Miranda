@@ -32,9 +32,6 @@
   text-align: left;
   color: #C2C2C2;
 }
-.video__play {
-  margin: 1.5em 0;
-}
 .video__btn {
   width: 16.563em;
   height: 4.5em;
@@ -48,9 +45,37 @@
   letter-spacing: 2.79px;
   color: #fff;
 }
-.video iframe {
+.video__container {
+  position: relative;
   width: 100%;
   height: 16.875em;
+  background: url("../../sources/video/poster.jpg") center/cover no-repeat;
+}
+.video__container video {
+  width: 100%;
+  height: 16.875em;
+}
+.video__container__play {
+  margin: 1.5em 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: none;
+}
+.video__container__button {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: 35%;
+  top: 32%;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.video__container__button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.video .auxcontent {
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -73,23 +98,51 @@
     width: 30.313em;
     margin-bottom: 2em;
   }
+  .video .auxcontent {
+    width: 40%;
+    height: 460px;
+    position: absolute;
+    top: calc(43.75em - 45% - 260px);
+    right: -20vw;
+  }
   .video .videocontent {
     width: 70%;
     background: #222222;
     padding-left: 10%;
     padding-top: 8.135em;
     height: 100%;
+    position: relative;
   }
-  .video .videocontent iframe {
-    width: 35%;
-    height: 460px;
+  .video__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+  }
+  .video__container__play {
+    margin: 0;
+  }
+  .video__container video {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+  .video__container__button {
     position: absolute;
-    top: calc(43.75em - 50% - 260px);
-    right: 5vw;
+    z-index: 1001;
+    top: 40%;
+    right: 34%;
   }
 }
 @media only screen and (min-width: 1300px) {
-  .video .videocontent iframe {
-    right: 10vw;
+  .video .auxcontent {
+    width: 40.625em;
+    right: -15vw;
+  }
+  .video__container__button {
+    right: 39%;
+    width: 120px;
+    height: 120px;
   }
 }/*# sourceMappingURL=video.css.map */
