@@ -36,10 +36,32 @@
     width: 100%;
     margin-top: 3em;
     padding: 0 1em;
-    &__play{
+    &__container{
         width: 100%;
-        height: 100%;
-        margin-bottom: 2em;
+        height: 200px;
+        position: relative;
+        margin-bottom: 2rem;
+        background: url('../../sources/video/poster.jpg') center/cover no-repeat;
+        &__play{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 2em;
+            object-fit: fill;
+            display: none;
+        }
+        &__button{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            right: 38%;
+            top: 25%;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
     }
     & p{
         font-family: 'OldStandardTT-Regular';
@@ -211,11 +233,19 @@
     }
 
     .videoabout{
-        &__play{
-            width: 73.125em !important;
-            height: 40.625em !important;
-            display: block;
+        &__container{
+            width: 73.125em;
+            height: 40.625em;
             margin: 0 auto;
+            &__play{
+                //margin: 0 auto;
+            }
+            &__button{
+                width: 90px;
+                height: 90px;
+                right: 45%;
+                top: 45%;
+            }
         }
         & p{
             width: 14.5em;
@@ -351,6 +381,24 @@
         &__imgcontent{
             width: 570px;
             height: 400px;
+        }
+    }
+}
+
+@media only screen and (min-width:1400px){
+    .videoabout{
+        &__container{
+            width: 73.125em;
+            height: 40.625em;
+            &__play{
+                margin: 0 auto;
+            }
+            &__button{
+                width: 90px;
+                height: 90px;
+                right: 44%;
+                top: 45%;
+            }
         }
     }
 }
