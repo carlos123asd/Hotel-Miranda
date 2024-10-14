@@ -1,9 +1,51 @@
 const swiperRooms = new Swiper('.sliderRooms', {
-    direction: 'horizontal',
-    slidesPerView: '1',
-    grid: {
-        rows: 6
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    grid: {
+        rows: 6, 
+        fill: 'row'
+    },
+    spaceBetween: 30,
     loop: false,
-    spaceBetween: 60
+    breakpoints: {
+        1784: {
+            spaceBetween: 130,
+            slidesPerView: 8, 
+            slidesPerGroup: 4,
+            grid: {
+                rows: 4,
+                fill: 'row' 
+            },
+        },
+       1000:{
+            spaceBetween: 130,
+            slidesPerView: 8, 
+            slidesPerGroup: 6,
+            grid: {
+                rows: 4,
+                fill: 'row' 
+            },
+        },
+        
+    }
 });
+
+/*
+breakpoints: {
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          grid: {
+            rows: 4,
+          },
+        }
+    },*/
