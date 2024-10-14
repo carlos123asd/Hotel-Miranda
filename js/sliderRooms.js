@@ -17,16 +17,7 @@ const swiperRooms = new Swiper('.sliderRooms', {
     spaceBetween: 30,
     loop: false,
     breakpoints: {
-        1784: {
-            spaceBetween: 130,
-            slidesPerView: 8, 
-            slidesPerGroup: 4,
-            grid: {
-                rows: 4,
-                fill: 'row' 
-            },
-        },
-       1000:{
+        1000:{
             spaceBetween: 130,
             slidesPerView: 8, 
             slidesPerGroup: 6,
@@ -35,7 +26,15 @@ const swiperRooms = new Swiper('.sliderRooms', {
                 fill: 'row' 
             },
         },
-        
+        1784: {
+            spaceBetween: 130,
+            slidesPerView: 8, 
+            slidesPerGroup: 12,
+            grid: {
+                rows: 4,
+                fill: 'row' 
+            },
+        },
     }
 });
 
