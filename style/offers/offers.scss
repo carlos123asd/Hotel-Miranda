@@ -108,6 +108,9 @@
 .contentaux2{
     padding: 0 1em;
     padding-bottom: 2em;
+    & .contentPriceAux{
+        display: none;
+    }
 }
 
 .popular{
@@ -141,14 +144,19 @@
         padding-bottom: 2em;
         margin: 0 auto;
     }
+    &--offers{
+        padding-bottom: 3rem;
+    }
 }
 .contentoffersAux{
     position: relative;
+    margin-bottom: 4rem;
 } 
 .swiper-button-next--posOfeert{
     top: 9em !important;
 }
 .slider__content__topbar--posOffers{
+    width: 80%;
     top: 90% !important;
     left: 10%;
 }
@@ -157,6 +165,26 @@
 }
 
 @media only screen and (min-width:1000px){
+    .slider--offer{
+        padding-bottom: 3rem;
+    }
+    .contentoffersAux{
+        & .slider__content__topbar--posOffers{
+            left: 9% !important;
+        }
+    } 
+    
+    .room{
+        &--offers{
+            width: 370px !important;
+            height: 438px !important;
+            background: #fff;
+        }
+        &--white{
+            padding-bottom: 3rem !important;
+            background: #222222;
+        }
+    }
     .offers{
         width: 73.125em;
         margin: 0 auto;
@@ -219,6 +247,9 @@
         &--flex{
             display: flex;
             justify-content: space-between;
+        }
+        & .contentPriceAux{
+            display: block;
         }
     }
     .contentaux{
