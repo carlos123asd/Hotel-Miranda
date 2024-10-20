@@ -259,9 +259,9 @@
 
 @media only screen and (min-width: 1000px) {
   .aboutheader {
-    height: 22.063em;
+    height: 28.313em;
     padding-left: 15%;
-    padding-top: 9.885em;
+    align-content: center;
   }
   .aboutheader__tit {
     font-size: 4.5rem;
