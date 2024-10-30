@@ -108,7 +108,7 @@
 }
 .swiper {
     width: 100%;
-    height: 15.25em;
+    //height: 15.25em;
 }
 .swiperImage{
     width: 100%;
@@ -146,6 +146,12 @@
     &:hover{
         background-color: #BDAC8D;
     }
+}
+
+.wrapperAling{
+    align-items: center;
+    width: max-content !important;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width:1000px){

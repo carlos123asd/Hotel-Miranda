@@ -261,7 +261,33 @@
   top: 7em !important;
 }
 
-.slider__content__topbar--pos {
-  top: 12.5em;
-  right: 9%;
+.slider__content__topbar--display {
+  position: absolute;
+  display: flex !important;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 70%;
+  height: 40px;
+  bottom: -5%;
+  right: 15%;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.slider__content__topbar__imgs {
+  width: 100% !important;
+}
+
+.contentAuxDetails {
+  position: relative;
+}
+
+.contentAuxDetailsRoomTxt {
+  margin-top: 2.5rem;
+}
+
+.room__imgRoom--list {
+  width: 100%;
+  height: 218px;
 }/*# sourceMappingURL=roomdetails.css.map */

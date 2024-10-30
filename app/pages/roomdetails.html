@@ -14,24 +14,44 @@
     <script src="../../js/sliderinit.js" defer></script>
 </head>
 <body>
+    <div class="topbarescritorio"></div>
     <nav>
-        <!--close-->
-        <div class="navclose">
-            <div class="navclose__img"></div>
+        <div class="navspan">
+            <span>We Make Your Feel Comfortable</span>
         </div>
-        <!--titulo-->
-        <div class="navtitulos">
-            <div class="navtitulos__content navtitulos--fondo">
-                <img class="navtitulos__content__img" src="../../sources/imgs/H.svg" alt="Logo Hotel Miranda">
+        <div class="contentsecondnav">
+            <!--close-->
+            <div class="navclose">
+                <div class="navclose__img"></div>
+                <div class="navclose__menu"></div>
             </div>
-            <div class="navtitulos__content">
-                <img class="navtitulos__content__tit" src="../../sources/imgs/HotelMiranda.svg" alt=""></div>
+            <!--titulo-->
+            <div class="navtitulos">
+                <a href="../../index.html">
+                    <div class="navtitulos__content navtitulos--fondo">
+                        <img class="navtitulos__content__img" src="../../sources/imgs/H.svg" alt="Logo Hotel Miranda"/>
+                    </div>
+                    <div class="navtitulos__content">
+                        <img class="navtitulos__content__tit" src="../../sources/imgs/HotelMiranda.svg" alt=""/>
+                    </div>
+                </a>
             </div>
-        </div>
-        <!--iconos-->
-        <div class="naviconos">
-            <div class="naviconos__perfil"></div>
-            <div class="naviconos__search"></div>
+            <!--Nav-->
+            <div class="navMenu">
+                <div class="navMenu__about"><a href="./about.html">About Us</a></div>
+                <div class="navMenu__rooms"><a href="./room.html">Rooms</a></div>
+                <div class="navMenu__offers"><a href="./offers.html">Offers</a></div>
+                <div class="navMenu__contact"><a href="./contact.html">Contact</a></div> 
+            </div>                  
+            <!--iconos-->
+            <div class="naviconos">
+                <div class="aux">
+                    <div class="naviconos__perfil"></div>
+                </div>
+                <div class="aux2">
+                    <div class="naviconos__search"></div>
+                </div>
+            </div>
         </div>
     </nav>
     <!--Nav JS-->
@@ -45,15 +65,16 @@
     </div>
 
     <!--header about-->
-    <section class="aboutheader aboutHeaderRoom">
+    <section class="aboutheader">
         <h3 class="aboutheader__sub">THE ULTIMATE LUXURY</h3>
-        <h2 class="aboutheader__tit">Ultimate Room</h2>
-        <div class="aboutheader__btn aboutheader__btn--large">
+        <h2 class="aboutheader__tit aboutheader__tit--dim">Ultimate Room</h2>
+        <div class="aboutheader__btn">
             <span>
                 <a href="../../index.html">Home&nbsp;|&nbsp;</a>Room Details
             </span>
         </div>
     </section>
+    
     
     <!--Check Availability-->
     <section class="doublebed">
@@ -140,41 +161,71 @@
     <!--Sliders-->
     <div class="slider">
         <div class="swiperRoomsPicked sliderRooms slider__content">
-            <div class="slider__content__topbar slider__content__topbar--pos">
-                <div class="slider__content__topbar__img"></div>
-                <div class="slider__content__topbar__img2"></div>
-                <div class="slider__content__topbar__img3"></div>
-                <div class="slider__content__topbar__img4"></div>
-                <div class="slider__content__topbar__img5"></div>
-                <div class="slider__content__topbar__img6"></div>
-                <div class="slider__content__topbar__img7"></div>
-            </div>
             <div class="swiper-wrapper">
                 <div class="room swiper-slide">
-                    <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
+                    <div class="contentAuxDetails">
+                        <div class="slider__content__topbar--display">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                        </div>
+                        <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
+                    </div>
+                    <div class="contentAuxDetailsRoomTxt">
+                        <h2 class="room__tit">Minimal Duplex Room</h2>
+                        <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <div class="room__content">
+                            <span class="room__content__precio">$345/Night</span>
+                            <span class="room__content__state">Booking Now</span>
+                        </div>
                     </div>
                 </div>
                 <div class="room swiper-slide">
-                    <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
+                    <div class="contentAuxDetails">
+                        <div class="slider__content__topbar--display">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                        </div>
+                        <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
+                    </div>
+                    <div class="contentAuxDetailsRoomTxt">
+                        <h2 class="room__tit">Minimal Duplex Room</h2>
+                        <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <div class="room__content">
+                            <span class="room__content__precio">$345/Night</span>
+                            <span class="room__content__state">Booking Now</span>
+                        </div>
                     </div>
                 </div>
                 <div class="room swiper-slide">
-                    <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
+                    <div class="contentAuxDetails">
+                        <div class="slider__content__topbar--display">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                        </div>
+                        <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
+                    </div>
+                    <div class="contentAuxDetailsRoomTxt">
+                        <h2 class="room__tit">Minimal Duplex Room</h2>
+                        <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <div class="room__content">
+                            <span class="room__content__precio">$345/Night</span>
+                            <span class="room__content__state">Booking Now</span>
+                        </div>
                     </div>
                 </div>
             </div>
