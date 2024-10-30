@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
-    <script src="../../js/sliderinit.js" defer></script>
+    <script src="../../js/sliderDetails.js" defer></script>
 </head>
 <body>
     <div class="topbarescritorio"></div>
@@ -79,36 +79,43 @@
     <!--Check Availability-->
     <section class="doublebed">
         <div class="doublebed__content">
-            <h3 class="doublebed__content__sub">Double Bed</h3>
-            <h2 class="doublebed__content__tit">Luxury Double Bed</h2>
-            <span class="doublebed__content__precio">$345<span>/Night</span></span>
-            <img class="doublebed__content__img" src="../../sources/imgs/doublebed.jpg" alt="image of the room with double bed">
-            <h4 class="doublebed__content__avaible">Check Availability</h4>
-            <h5 class="doublebed__content__labelin">Check In</h5>
-            <div class="doublebed__content__contentin">
-                <div class="doublebed__content__contentin__text">
-                    <input type="text" placeholder="Fri, 14th June 2020">
+            <div>
+                <div class="contentRoomInfoDetails">
+                    <div>
+                        <h3 class="doublebed__content__sub">Double Bed</h3>
+                        <h2 class="doublebed__content__tit">Luxury Double Bed</h2>
+                    </div>
+                    <span class="doublebed__content__precio">$345<span>/Night</span></span>
                 </div>
-                <div class="doublebed__content__contentin__calendar">
-                    <input type="date">
-                    <img src="../../sources/imgs/calendaravaible.svg" alt="">
-                </div>
+                <img class="doublebed__content__img" src="../../sources/imgs/doublebed.jpg" alt="image of the room with double bed">
             </div>
-            <div></div>
-            <h5 class="doublebed__content__labelout">Check Out</h5>
-            <div class="doublebed__content__contentin">
-                <div class="doublebed__content__contentin__text">
-                    <input type="text" placeholder="Sun, 16th June 2020">
+            <div class="contentAuxDetailsAvailability">
+                <h4 class="doublebed__content__avaible">Check Availability</h4>
+                <h5 class="doublebed__content__labelin">Check In</h5>
+                <div class="doublebed__content__contentin">
+                    <div class="doublebed__content__contentin__text">
+                        <input type="text" placeholder="Fri, 14th June 2020">
+                    </div>
+                    <div class="doublebed__content__contentin__calendar">
+                        <input type="date">
+                        <img src="../../sources/imgs/calendaravaible.svg" alt="">
+                    </div>
                 </div>
-                <div class="doublebed__content__contentin__calendar">
-                    <input type="date">
-                    <img src="../../sources/imgs/calendaravaible.svg" alt="">
+                <div></div>
+                <h5 class="doublebed__content__labelout">Check Out</h5>
+                <div class="doublebed__content__contentin">
+                    <div class="doublebed__content__contentin__text">
+                        <input type="text" placeholder="Sun, 16th June 2020">
+                    </div>
+                    <div class="doublebed__content__contentin__calendar">
+                        <input type="date">
+                        <img src="../../sources/imgs/calendaravaible.svg" alt="">
+                    </div>
                 </div>
+                <div class="doublebed__content__btn">Check Availability</div>
             </div>
-            <div></div>
-            <div class="doublebed__content__btn">Check Availability</div>
+            <p class="doublebed__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         </div>
-        <p class="doublebed__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
     </section>
 
     <!--Amenities-->
@@ -159,70 +166,75 @@
 <section class="relatedrooms">
     <h2 class="relatedrooms__tit">Related Rooms</h2>
     <!--Sliders-->
-    <div class="slider">
-        <div class="swiperRoomsPicked sliderRooms slider__content">
+    <div class="slider sliderroomdetails">
             <div class="swiper-wrapper">
-                <div class="room swiper-slide">
+                <div class="room swiper-slide detailslide">
                     <div class="contentAuxDetails">
                         <div class="slider__content__topbar--display">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            <div class="auxcontentimgstopbarDetails">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            </div>
                         </div>
                         <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
                     </div>
                     <div class="contentAuxDetailsRoomTxt">
                         <h2 class="room__tit">Minimal Duplex Room</h2>
                         <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <div class="room__content">
+                        <div class="room__content auxflexprices">
                             <span class="room__content__precio">$345/Night</span>
                             <span class="room__content__state">Booking Now</span>
                         </div>
                     </div>
                 </div>
-                <div class="room swiper-slide">
+                <div class="room swiper-slide detailslide">
                     <div class="contentAuxDetails">
                         <div class="slider__content__topbar--display">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            <div class="auxcontentimgstopbarDetails">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            </div>
                         </div>
                         <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
                     </div>
                     <div class="contentAuxDetailsRoomTxt">
                         <h2 class="room__tit">Minimal Duplex Room</h2>
                         <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <div class="room__content">
+                        <div class="room__content auxflexprices">
                             <span class="room__content__precio">$345/Night</span>
                             <span class="room__content__state">Booking Now</span>
                         </div>
                     </div>
                 </div>
-                <div class="room swiper-slide">
+                <div class="room swiper-slide detailslide">
                     <div class="contentAuxDetails">
                         <div class="slider__content__topbar--display">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
-                            <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            <div class="auxcontentimgstopbarDetails">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/acondicionado.svg" alt="acondicionado">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/alcohol.svg" alt="alcohol">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/bed.svg" alt="bed">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/car.svg" alt="car">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/gym.svg" alt="gym">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/tabaco.svg" alt="tabaco">
+                                <img class="slider__content__topbar__imgs" src="../../sources/imgs/topbar/wifi.svg" alt="wifi">
+                            </div>
                         </div>
                         <img class="room__imgRoom--list" src="../../sources/imgs/room1.jpg" alt="">
                     </div>
                     <div class="contentAuxDetailsRoomTxt">
                         <h2 class="room__tit">Minimal Duplex Room</h2>
                         <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <div class="room__content">
+                        <div class="room__content auxflexprices">
                             <span class="room__content__precio">$345/Night</span>
                             <span class="room__content__state">Booking Now</span>
                         </div>
@@ -231,12 +243,12 @@
             </div>
             <div class="swiper-button-prev swiper-button-next--pos"></div>
             <div class="swiper-button-next swiper-button-next--pos"></div>
-        </div>
     </div>
 </section>
 
-    <footer>
-        <div class="footer">
+<footer>
+    <div class="footer">
+        <div class="contentfooter1">
             <div>
                 <div class="footer__logo">H</div>
                 <span class="footer__name">HOTEL<br><span>MIRANDA</span></span>
@@ -244,7 +256,7 @@
             <p class="footer__p">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
             <div>
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="facebook" width="20px" height="20px" id="facebook" fill="white" viewBox="-192 -192 2304.00 2304.00" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.84"/>
@@ -254,7 +266,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="twitter" width="15px" height="15px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -264,7 +276,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="be" width="20px" height="20px" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -274,7 +286,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="linkedin" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -284,7 +296,7 @@
                 </div>
 
                 <div class="footer__contentprimary">
-                    <div class="footer__contentsecundary">
+                    <div class="footer__contentsecundary contentSec">
                         <svg id="youtube" width="15px" height="15px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -293,7 +305,9 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        
+        <div class="contentfooter2">
             <h3 class="footer__titservices">Services.</h3>
             <div class="footer__lista">
                 <ul>
@@ -313,11 +327,14 @@
                     </div>
                 </ul>
             </div>
+        </div>
+       
+        <div class="contentfooter3">
             <h3 class="footer__titcontact">Contact Us.</h3>
             <div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="../../sources//imgs/contact/phone.svg" alt="">
+                        <img src="./sources//imgs/contact/phone.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Phone Number</span>
@@ -326,7 +343,7 @@
                 </div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="../../sources//imgs/contact/correo.svg" alt="">
+                        <img src="./sources//imgs/contact/correo.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Mail</span>
@@ -335,7 +352,7 @@
                 </div>
                 <div class="footer__contentcontact">
                     <div class="footer__contentcontact__imgphone">
-                        <img src="../../sources//imgs/contact/map.svg" alt="">
+                        <img src="./sources//imgs/contact/map.svg" alt=""/>
                     </div>
                     <div class="footer__contentcontact__txtphone">
                         <span class="footer__contentcontact__txtphone__tit">Location</span>
@@ -344,11 +361,12 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="footer__copy">
-            <span class="footer__copy__tit">Copyright By@Example - 2020</span>
-            <span class="footer__copy__sub">Terms of use    |    Privacy Environmental Policy</span>
-        </div>
-    </footer>
+    <div class="footer__copy">
+        <span class="footer__copy__tit">Copyright By@Example - 2020</span>
+        <span class="footer__copy__sub">Terms of use    |    Privacy Environmental Policy</span>
+    </div>
+</footer>
 </body>
 </html>
